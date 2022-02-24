@@ -2,6 +2,9 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
+dev:
+	export FLASK_ENV=development
+
 format:
 	black *.py
 
